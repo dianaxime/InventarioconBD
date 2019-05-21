@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/navigation2" app:startDestination="@id/productos">
+
+    <fragment android:id="@+id/productos" android:name="com.example.inventarioconbd.productos"
+              android:label="productos">
+        <action android:id="@+id/action_productos_to_nuevo2" app:destination="@id/nuevo2"/>
+    </fragment>
+    <fragment android:id="@+id/nuevo2" android:name="com.example.inventarioconbd.nuevo" android:label="nuevo"/>
+</navigation>

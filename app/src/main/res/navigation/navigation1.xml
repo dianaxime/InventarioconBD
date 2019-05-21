@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/navigation1" app:startDestination="@id/inv">
+
+    <fragment android:id="@+id/inv" android:name="com.example.inventarioconbd.Inv" android:label="Inv">
+        <action android:id="@+id/action_inv_to_listado" app:destination="@id/listado"/>
+    </fragment>
+    <fragment android:id="@+id/listado" android:name="com.example.inventarioconbd.listado" android:label="listado"/>
+</navigation>

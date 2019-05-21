@@ -7,6 +7,11 @@
         android:fitsSystemWindows="true"
         tools:openDrawer="start" android:layout_width="match_parent" android:layout_height="match_parent">
 
+    <fragment
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:navGraph="@navigation/navigation1" app:defaultNavHost="true"
+            android:id="@+id/fragment"/>
     <include
             layout="@layout/app_bar_main"
             android:layout_width="match_parent"
@@ -15,7 +20,6 @@
             android:id="@+id/myNav"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:navGraph="@navigation/navigation"
             app:defaultNavHost="true"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
